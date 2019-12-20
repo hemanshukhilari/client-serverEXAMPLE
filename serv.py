@@ -7,6 +7,7 @@ HEADERSIZE=10
 
 s = socket.socket(socket.AF_INET , socket.SOCK_STREAM)
 s.bind((socket.gethostname(),1234))
+#non privileged port adress are greater that 1024
 s.listen(5)
 
 while True:
